@@ -17,7 +17,7 @@
   - 모든 Life Cycle Hooks는 자동으로 this 컨텍스트를 인스턴스에 바인딩
     - 따라서 데이터, 계산된 메소드에 접근 가능
     - 화살표 함수를 사용한 메소드 정의 X
-  - ![스크린샷 2022-07-17 오후 9.57.51](/Users/soomi/Library/Application Support/typora-user-images/스크린샷 2022-07-17 오후 9.57.51.png)
+  - ![스크린샷 2022-07-17 오후 9.57.51](./img/LifeCycle.png)
 
 ###### Vue Instance Option
 
