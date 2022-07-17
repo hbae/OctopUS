@@ -1,50 +1,44 @@
-# 웹/모바일(웹 디자인) 스켈레톤 프로젝트
+# Vue.js ES6 Vuex로 간단한 Todo 웹앱 만들어보기
 
-<!-- 필수 항목 -->
 
-## 카테고리
+## Vuex
+### Vuex란?
+- 복잡한 애플리케이션의 컴포넌트들을 효율적으로 관리하는 Vuex 라이브러리
+- React의 Flux 패턴에서 기인함
 
-| Application | Domain | Language | Framework |
-| ---- | ---- | ---- | ---- |
-| :black_square_button: Desktop Web | :black_square_button: AI | :white_check_mark: JavaScript | :white_check_mark: Vue.js |
-| :white_check_mark: Mobile Web | :black_square_button: Big Data | :black_square_button: TypeScript | :black_square_button: React |
-| :black_square_button: Responsive Web | :black_square_button: Blockchain | :black_square_button: C/C++ | :black_square_button: Angular |
-| :black_square_button: Android App | :black_square_button: IoT | :black_square_button: C# | :black_square_button: Node.js |
-| :black_square_button: iOS App | :black_square_button: AR/VR/Metaverse | :white_check_mark: Python | :white_check_mark: Flask/Django |
-| :black_square_button: Desktop App | :black_square_button: Game | :white_check_mark: Java | :white_check_mark: Spring/Springboot |
-| | | :black_square_button: Kotlin | |
+### 왜 Vuex?
+#### Vuex를 왜 쓰는지를 알려면 우선 Flux패턴에 대한 이해가 필요
+- Flux 패턴이란 MVC 패턴의 복잡한 데이터 흐름 문제를 해결하는 개발 패턴(Unidirectional Data Flow)
+- action : 화면에서 발생하는 이벤트 또는 사용자의 입력
+- dispatcher : 데이터를 변경하는 방법, 메서드
+- model : 화면에 표시할 데이터
+- view : 사용자에게 비춰지는 화면
 
-<!-- 필수 항목 -->
+#### MVC vs Flux
+- MVC 패턴의 문제점 : 기능 추가 및 변경에 따라 생기는 문제점을 예측할 수가 없음 (예시 : 페이스북 채팅 화면), 앱이 복잡해지면서 생기는 업데이트 루프
+- Flux패턴의 단방향 데이터 흐름 : 데이터의 흐름이 여러 갈래로 나뉘지 않고 단방향으로만 처리
 
-## 프로젝트 소개
+#### Vuex가 왜 필요할까?
+- 복잡한 애플리케이션에서 컴포넌트의 개수가 많아지면 컴포넌트 간에 데이터 전달이 어려워진다.
+- 이걸 단순히 이벤트 버스로 해결하려면, 어디서 이벤트를 보냈는지 혹은 어디서 이벤트를 받았는지 알기 어려움(컴포넌트 간 데이터 전달이 명시적이지 않음)
 
-* 프로젝트명: 웹 큐레이션 SNS
-* 서비스 특징: 웹/모바일(웹 디자인) 프로젝트를 위한 스켈레톤 프로젝트
-* 주요 기능
-  - 계정 관리
-  - 검색 기능
-  - 뉴스피드 기능
-* 주요 기술
-  - Single Page Application
-  - CSS, SASS
-  - REST API
-* 참조 리소스
-  * sass-loader: scss 로드 및 컴파일
-* 배포 환경
-  - URL: // 웹 서비스, 랜딩 페이지, 프로젝트 소개 등의 배포 URL 기입
-  - 테스트 계정: // 로그인이 필요한 경우, 사용 가능한 테스트 계정(ID/PW) 기입
+#### Vuex로 해결 가능한 문제
+- MVC 패턴에서 발생하는 구조적 오류
+- 컴포넌트간 데이터 전달 명시
+- 여러 개의 컴포넌트에서 같은 데이터를 업데이트 할 때 동기화 문제
 
-<!-- 자유 양식 -->
+#### Vuex 컨셉
+- State : 컴포넌트 간에 공유하는 데이터(data)
+- View : 데이터를 표시하는 화면(template)
+- Action : 사용자의 입력에 따라 데이터를 변경(methods)
 
-## 팀 소개
-* 김ㅇㅇ: 팀장, 프론트엔드 개발
-* 이ㅇㅇ: 부팀장, 기획 및 와이어프레임 작성, 프론트엔드 개발
-* 박ㅇㅇ: 백엔드 개발 및 QA 담당
-* 홍ㅇㅇ: 백엔드 개발, Swagger API 문서 관리
-* 전ㅇㅇ: 코드 리뷰 및 인프라 담당, CI/CD, HTTPS, Docker 구성
+#### Vuex 구조
+#### 컴포넌트 -> 비동기 로직 -> 동기 로직 -> 상태
 
-<!-- 자유 양식 -->
 
-## 프로젝트 상세 설명
 
-// 개발 환경, 기술 스택, 시스템 구성도, ERD, 기능 상세 설명 등
+#### 참고한 사이트
+- Favicon(https://www.favicon-generator.org/)
+- Vue Transition(https://kr.vuejs.org/v2/guide/transitions.html)
+- Vue Modal(https://kr.vuejs.org/v2/examples/modal.html)
+- FontAwesome(https://fontawesome.com/)
