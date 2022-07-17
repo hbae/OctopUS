@@ -1,13 +1,23 @@
 # Vue.js ES6 Vuex로 간단한 Todo 웹앱 만들어보기
 
 
+<img src="/src/convert.gif">
+
+
 ## Vuex
 ### Vuex란?
 - 복잡한 애플리케이션의 컴포넌트들을 효율적으로 관리하는 Vuex 라이브러리
 - React의 Flux 패턴에서 기인함
 
 ### 왜 Vuex?
+
+#### Flux Pattern
+<br>
+<img src="/src/Flux.png" >
+<br><br>
+
 #### Vuex를 왜 쓰는지를 알려면 우선 Flux패턴에 대한 이해가 필요
+
 - Flux 패턴이란 MVC 패턴의 복잡한 데이터 흐름 문제를 해결하는 개발 패턴(Unidirectional Data Flow)
 - action : 화면에서 발생하는 이벤트 또는 사용자의 입력
 - dispatcher : 데이터를 변경하는 방법, 메서드
@@ -17,6 +27,15 @@
 #### MVC vs Flux
 - MVC 패턴의 문제점 : 기능 추가 및 변경에 따라 생기는 문제점을 예측할 수가 없음 (예시 : 페이스북 채팅 화면), 앱이 복잡해지면서 생기는 업데이트 루프
 - Flux패턴의 단방향 데이터 흐름 : 데이터의 흐름이 여러 갈래로 나뉘지 않고 단방향으로만 처리
+
+<br>
+<img src="/src/complex_mvc.png" width="700px" height="300px">
+<br><br>
+<br>
+<img src="/src/flux2.png">
+<br><br>
+
+
 
 #### Vuex가 왜 필요할까?
 - 복잡한 애플리케이션에서 컴포넌트의 개수가 많아지면 컴포넌트 간에 데이터 전달이 어려워진다.
@@ -32,10 +51,13 @@
 - View : 데이터를 표시하는 화면(template)
 - Action : 사용자의 입력에 따라 데이터를 변경(methods)
 
+<img src="/src/statepattern.png" width="500px" height="500px">
+
 #### Vuex 구조
 #### 컴포넌트 -> 비동기 로직 -> 동기 로직 -> 상태
-
-
+#### Actions(비동기로 백엔드에서 데이터를 받아옴, 데이터를 변경할 수 있는 mutations를 콜)
+#### Mutations(동기적 로직 처리, state 변경할 수 있음)
+<img src="/src/vuexconcept.png">
 
 #### 참고한 사이트
 - Favicon(https://www.favicon-generator.org/)
