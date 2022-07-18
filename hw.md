@@ -35,7 +35,8 @@
 * WAS
    - 인터넷 상에서 HTTP 프로토콜을 통해 사용자 컴퓨터나 장치에 애플리케이션을 수행해주는 미들웨어로서, 주로 DB와 함께 동적 서버 컨텐츠를 수행
    - 웹 서버 + 웹 컨테이너; 웹 서버 단독으로 처리할 수 없는 다양한 로직 처리가 필요한 동적 컨텐츠 제공
-  ** Web container : 웹 서버가 보낸 jsp 등의 파일을 수행한 결과를 다시 웹 서버로 보내줌
+  
+  + ** Web container : 웹 서버가 보낸 jsp 등의 파일을 수행한 결과를 다시 웹 서버로 보내줌
 
 # Springboot의 구조
 * src/main/java 디렉터리
@@ -44,7 +45,7 @@
    - 모든 프로그램에는 시작을 담당하는 파일이 있다. 스프링부트 애플리케이션에도 시작을 담당하는 파일이 있는데 그 파일이 바로 <프로젝트명> + Application.java 파일이다. 스프링부트 프로젝트를 생성할때 "Sbb"라는 이름을 사용하면 다음과 같은 SbbApplication.java 파일이 자동으로 생성된다.
 [파일명:/sbb/src/main/java/com/mysite/sbb/SbbApplication.java]
 ![image-1.png](./image-1.png)
-SbbApplication 클래스에는 위와 같이 반드시 @SpringBootApplication 애너테이션이 적용되어 있어야 한다. @SpringBootApplication 애너테이션을 통해 스프링부트의 모든 설정이 관리된다.
+ SbbApplication 클래스에는 위와 같이 반드시 @SpringBootApplication 애너테이션이 적용되어 있어야 한다. @SpringBootApplication 애너테이션을 통해 스프링부트의 모든 설정이 관리된다.
 * templates 디렉터리
    - src/main/resources 디렉터리의 하위 디렉터리인 templates 디렉터리에는 템플릿 파일을 저장한다. 템플릿 파일은 HTML 파일 형태로 자바 객체와 연동되는 파일이다. templates 디렉터리에는 SBB의 질문 목록, 질문 상세 등의 HTML 파일을 저장한다.
 * src/main/resources 디렉터리
