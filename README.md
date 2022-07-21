@@ -50,3 +50,6 @@
    - ERD 설계, 기능 명세서 작성
 - 7/20
   - ERD 수정, Figma 계정 생성
+- 7/21
+   - 카카오 오븐 생성
+   - **https://ovenapp.io/view/EpZQE8gDdQjd8mqvEnti2pYYRIAsVVHB/i77Pt**
