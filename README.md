@@ -53,3 +53,7 @@
 - 7/21
    - 카카오 오븐 생성
    - **https://ovenapp.io/view/EpZQE8gDdQjd8mqvEnti2pYYRIAsVVHB/i77Pt**
+
+- 7/22
+  - Mock-up 최종 점검, 수정
+  - Notion - README 작성
